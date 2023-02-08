@@ -1,6 +1,6 @@
 body {
-  background-color:azure;
-  font-family:'Times New Roman', Times, serif;
+  background-color: azure;
+  font-family: "Times New Roman", Times, serif;
   font-size: 100%;
   margin-top: 1cm;
   margin-bottom: 1cm;
@@ -13,35 +13,46 @@ header {
 }
 
 h1 {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
-}
-
-h1 {
   text-align: center;
-}
-
-img {
-  float: right;
 }
 
 h2 {
   text-align: center;
 }
 
+img {
+  float: right;
+  border-style: solid;
+  height: 400px;
+  width: 60%;
+}
+
 #ingredienser {
-  background-color: rgb(146, 146, 237);
+  background-color: rgb(237, 146, 157);
+  height: 200px;
+  width: 30%;
+  border-style: dotted; 
 }
 
 #fremgangsmåde {
-  background-color: rgb(161, 161, 200);
+  background-color: rgb(237, 146, 157);
+  height: 400px;
+  width: 30%;
+  border-style: dotted;
 }
 
 footer {
   text-align: center;
+  background-color: rgb(243, 229, 238);
 }
 
-img {
-  height: 200px;
-  width: 45%;
+#intro {
+  font-size: 120%;
+}
+
+#links {
+  text-align: left;
+  background-color: whitesmoke;
 }

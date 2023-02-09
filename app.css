@@ -15,6 +15,7 @@ body {
   padding: 1em;
     grid-template-areas:  
     "header"
+    "intro"
     "ingredients"
     "img"
     "how-to"
@@ -22,25 +23,24 @@ body {
     "footer";
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 800px) {
     .grid-container { 
-    grid-template-areas:  
-    "header header header header header"
-    "ingredients ingredients img img img"
-    "how-to how-to img img img"
-    "how-to how-to links links links"
-    "footer footer footer footer footer"
-    grid-template-rows 15vh 15vh 40vh 15vh 15vh
-}}
+    display: grid;  
+    grid-template-columns:33vw 33vw 33vw ;  
+    grid-template-rows: 10vh 15vh 20vh 20vh 20vh 15vh ;
+}
 
 
 header {
   background-color: #fdffcd;
+  grid-column: span 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+  font-size: 200%;
   text-align: center;
 }
 
@@ -49,45 +49,70 @@ h2 {
 }
 
 img {
-  float: right;
   border-style: solid;
-  height: min 45vh;
-  width: 40vw;
-  margin-inline-end: 1em;
+  width: 30vw;
+  height: 42vh;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  margin-block-start: 2rem;
 }
 
-#ingredients {
+.ingredients {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 7;
   background-color: #ffebbb;
-  height: min 20vh;
-  width: min 30vw;
   border-style: dotted; 
   margin: 1em;
   font-size: 110%;
+  padding: 1rem;
 }
 
-#how-to {
+.how-to {
   background-color: #ffcab0;
-  height: min 25vh;
-  width: min 30vw;
+  height: auto;
+  width: auto;
   border-style: dotted;
   margin: 1em;
   font-size: 110%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 8;
+  padding: 1rem;
 }
 
 footer {
   text-align: center;
   background-color: #fdffcd;
   margin: 1em;
+  grid-column: span 3;
+  grid-row-start: 9;
+  grid-row-end: 9;
 }
 
-#intro {
-  margin: 1em;
+.intro {
+  margin: 1rem;
+  padding: 0,5em;
   font-size: 120%;
+  grid-column: span 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
 }
 
-#links {
+.links {
   text-align: left;
   background-color:  #ffebbb;
   margin: 1em;
+  border: solid;
   font-size: 110%;
+  grid-column: span 2;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  padding: 1rem;
+}
 }

@@ -57,6 +57,7 @@ img {
   grid-row-start: 4;
   grid-row-end: 6;
   margin-block-start: 2rem;
+  margin-inline-start: 1rem;
 }
 
 .ingredients {

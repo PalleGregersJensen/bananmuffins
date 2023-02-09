@@ -6,14 +6,13 @@ body {
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;*/
-  margin: 0%;
+  margin: 1em;
   padding: 0%;
 }
 
 .gridcontainer{
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1em;
+  grid-template-columns: 1fr; 
   padding: 1em;
     grid-template-areas:  
     "header"
@@ -24,15 +23,15 @@ body {
     "footer";
 }
 
-@media (min-width: 400px) {
+@media (min-width: 1400px) {
     .grid-container { 
     grid-template-areas:  
     "header header header header header"
     "ingredients ingredients img img img"
     "how-to how-to img img img"
     "how-to how-to links links links"
-    "footer footer footer"
-    grid-template-rows 30vh 40vh 30vh
+    "footer footer footer footer footer"
+    grid-template-rows 15vh 15vh 40vh 15vh 15vh
 }}
 
 
@@ -53,21 +52,21 @@ h2 {
 img {
   float: right;
   border-style: solid;
-  height: 25rem;
-  width: max 60%;
+  height: min 45vh;
+  width: 40vw;
 }
 
 #ingredients {
   background-color: #ffebbb;
-  height: 200px;
-  width: max 30%;
+  height: min 20vh;
+  width: min 30vw;
   border-style: dotted; 
 }
 
 #how-to {
   background-color: #ffcab0;
-  height: 25%;
-  width: max 30%;
+  height: min 25vh;
+  width: min 30vw;
   border-style: dotted;
 }
 

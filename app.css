@@ -1,15 +1,15 @@
 body {
-  background-color: azure;
+  background-color:#e0ffcd;
   font-family: "Times New Roman", Times, serif;
   font-size: 100%;
-  margin-top: 1cm;
-  margin-bottom: 1cm;
-  margin-left: 2cm;
-  margin-right: 2cm;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 header {
-  background-color: rgb(148, 170, 101);
+  background-color: #fdffcd;
 }
 
 h1 {
@@ -25,27 +25,27 @@ h2 {
 img {
   float: right;
   border-style: solid;
-  height: 400px;
-  width: 60%;
+  height: 25rem;
+  width: max 60%;
 }
 
-#ingredienser {
-  background-color: rgb(237, 146, 157);
+#ingredients {
+  background-color: #ffebbb;
   height: 200px;
-  width: 30%;
+  width: max 30%;
   border-style: dotted; 
 }
 
-#fremgangsmåde {
-  background-color: rgb(237, 146, 157);
-  height: 400px;
-  width: 30%;
+#how-to {
+  background-color: #ffcab0;
+  height: 25%;
+  width: max 30%;
   border-style: dotted;
 }
 
 footer {
   text-align: center;
-  background-color: rgb(243, 229, 238);
+  background-color: #fdffcd;
 }
 
 #intro {
@@ -54,5 +54,5 @@ footer {
 
 #links {
   text-align: left;
-  background-color: whitesmoke;
+  background-color: #e0ffcd;
 }

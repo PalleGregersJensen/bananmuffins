@@ -2,11 +2,39 @@ body {
   background-color:#e0ffcd;
   font-family: "Times New Roman", Times, serif;
   font-size: 100%;
-  margin-top: 2rem;
+  /*margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
-  margin-right: 2rem;
+  margin-right: 2rem;*/
+  margin: 0%;
+  padding: 0%;
 }
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+    grid-template-areas:  
+    "header"
+    "ingredients"
+    "img"
+    "how-to"
+    "links"
+    "footer";
+}
+
+@media (min-width: 400px) {
+    .grid-container { 
+    grid-template-areas:  
+    "header header header header header"
+    "ingredients ingredients img img img"
+    "how-to how-to img img img"
+    "how-to how-to links links links"
+    "footer footer footer"
+    grid-template-rows 30vh 40vh 30vh
+}}
+
 
 header {
   background-color: #fdffcd;
